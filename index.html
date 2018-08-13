@@ -21,6 +21,10 @@
           width: 640px;
           background: transparent;
         } */
+      .button-container {
+        margin-top: 40px;
+        justify-content: center;
+      }
       @media only screen and (max-width: 800px) {
 
         #mc_embed_signup {
@@ -29,6 +33,10 @@
         }
         #mc_embed_signup input {
           font-size: 1.5em !important;
+        }
+        .button-container {
+          margin-top: 10px;
+          justify-content: flex-start;
         }
       }
       /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -43,13 +51,16 @@
         <!-- Begin MailChimp Signup Form -->
         <div id="mc_embed_signup">
           <form action="https://facebook.us15.list-manage.com/subscribe/post?u=e1bf3ea947f48fa96c10e56f5&amp;id=eac1efb4f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-            
-            <input type="email" style="height: 94px;outline: none;border: none;font-size: 3em;width: 640px;background: transparent;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" style="height: 94px;outline: none;border: none;font-size: 3em;width: 640px;max-width:85vw;background: transparent;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e1bf3ea947f48fa96c10e56f5_eac1efb4f4" tabindex="-1" value=""></div>
               <div class="clear" style="display:none;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-              </div>
+            </div>
+            <div class="button-container" style="position:relative;display:flex;max-width:100vw;">
+              <img src="./submit.svg" style="cursor:pointer;width:300px;max-width:70%;" />
+              <input type="submit" style="position: absolute; height:100px; width: 300px;max-width:70%;background:transparent; border:none; color:transparent;outline: none;cursor:pointer;">
+            </div>
           </form>
         </div>
       </div>
